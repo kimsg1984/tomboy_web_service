@@ -1,0 +1,10 @@
+#!/bin/bash
+# this script is ontouch git push script
+# how to use: 
+# ~$ sh gitt "write your commit as you want"
+
+git add *
+git push 
+git commit -m "$1"
+git push origin master
+exit
