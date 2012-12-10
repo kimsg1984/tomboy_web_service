@@ -30,7 +30,7 @@ $content=explode("<!--{meta_data}", $_POST['content']);
 	<input type="hidden" name="notefile" Value="<?echo $_POST['notefile']?>">
 	<input type="hidden" name="meta_data" Value="<?echo $content[1]?>">
 	<textarea name="content" id="content"><?echo $content[0]?></textarea>
-	<input type="submit" value="저장">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="저장">
 	
 	<!--  -->
 
