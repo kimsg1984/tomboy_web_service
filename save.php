@@ -32,7 +32,8 @@ echo "$result1<br> $notefile_sync, <br> $save";
 
 if ($save == "succeed\n"){
 header("Location:./dylink.php?title=$title");
-}lstat(filename)
+}
+
 
 else {
 	echo $result;

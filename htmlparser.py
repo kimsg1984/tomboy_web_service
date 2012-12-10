@@ -12,6 +12,18 @@ import os
 import urllib
 import sys
 import subprocess
+import datetime
+
+def writeLog(comment):
+	t = datetime.datetime.now()
+	comment = '%s : %s : %s \n ' %(t, sys.argv[0], comment)
+	logfile1 = open('./log.txt', 'a')
+	logfile1.write('%s' %comment)
+	logfile1.close()
+	logfile2 = open('./log/%s.txt' %comment, 'w')
+	logfile2.write('%s' %comment)
+	logfile2.close()
+	# writeLog('def addTag, for l in link : %s fail to remove ' %l)
 
 def replace_decorations(string_content):
     string_content = string_content.replace('</b>', '</bold>')
@@ -65,12 +77,34 @@ def getCallResult(cmdARGS):
 	fd_popen.close()
 	return data
 
-# def addTag(content_xml):
-# 	listFile = open('./notefile/list.txt')
-# 	content = listFile.read()
-# 	titles = re.findall(r'{link}%s{/link}' %title, content)
-# 	echo '%s' %titles
-# 	return content_xml
+def addTag(content_xml):
+	listFile = open('./notefile/list.txt')
+	content = listFile.read()
+	titles = re.findall(r'{link}(.+){/link}', content)
+	titles.sort()
+	
+	for l in link:
+		l = l.lower()
+		try: 
+			titles.remove('%s' %l)
+		except:
+			writeLog('def addTag, for l in link : %s fail to remove ' %l)
+	try:
+		titles.remove('%s' %title)
+	except:
+		null = 0 # content has no same word as 'title'
+		
+	# t = '웹톰'
+
+	for t in titles:
+		try:
+			content_xml = content_xml.replace( ' %s ' %t, '<link:internal>%s</link:internal>' %t)
+			print '%s' %t
+		except:
+			null = 0
+
+		
+	return content_xml
 
 
 WORK_DIR = './notefile'
@@ -114,9 +148,7 @@ content_xml = xmlTag(content_xml, meta_data)
 try:
 	content_xml = addTag(content_xml)
 except:
-	null = 0
-
-# print '%s' %content_xml
+	writeLog('addTag error')
 
 content_xml_file = open('./%s.xml' %sys.argv[1], 'w')
 content_xml_file.write('%s' %content_xml)

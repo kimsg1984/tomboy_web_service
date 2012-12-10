@@ -1,0 +1,16 @@
+2012-12-11 02:45:08.793025 : htmlparser.py : def addTag, for l in link : songlist2013-1월 fail to remove  
+ 2012-12-11 02:45:08.793443 : htmlparser.py : def addTag, for l in link : 교회 fail to remove  
+ 2012-12-11 02:45:08.793601 : htmlparser.py : def addTag, for l in link : 웹톰 fail to remove  
+ 2012-12-11 02:45:08.793747 : htmlparser.py : def addTag, for l in link : test fail to remove  
+ 2012-12-11 02:45:08.793893 : htmlparser.py : def addTag, for l in link : hackers vocabulary fail to remove  
+ 2012-12-11 02:45:31.575706 : htmlparser.py : def addTag, for l in link : songlist2013-1월 fail to remove  
+ 2012-12-11 02:45:31.576103 : htmlparser.py : def addTag, for l in link : 교회 fail to remove  
+ 2012-12-11 02:45:31.576264 : htmlparser.py : def addTag, for l in link : 웹톰 fail to remove  
+ 2012-12-11 02:45:31.576413 : htmlparser.py : def addTag, for l in link : test fail to remove  
+ 2012-12-11 02:45:31.576574 : htmlparser.py : def addTag, for l in link : hackers vocabulary fail to remove  
+ 2012-12-11 02:45:43.362606 : htmlparser.py : def addTag, for l in link : songlist2013-1월 fail to remove  
+ 2012-12-11 02:45:43.363046 : htmlparser.py : def addTag, for l in link : 교회 fail to remove  
+ 2012-12-11 02:45:43.363216 : htmlparser.py : def addTag, for l in link : 웹톰 fail to remove  
+ 2012-12-11 02:45:43.363366 : htmlparser.py : def addTag, for l in link : test fail to remove  
+ 2012-12-11 02:45:43.363517 : htmlparser.py : def addTag, for l in link : hackers vocabulary fail to remove  
+ 
