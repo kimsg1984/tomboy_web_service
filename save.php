@@ -32,15 +32,15 @@ echo "$result1<br> $notefile_sync, <br> $save";
 
 if ($save == "succeed\n"){
 header("Location:./dylink.php?title=$title");
-}
+}lstat(filename)
 
 else {
 	echo $result;
 }
 	
 echo 'test';
-unlink("$edited_file_name");
-unlink("$edited_file_name.xml");
+// unlink("$edited_file_name");
+// unlink("$edited_file_name.xml");
 
 shell_exec('python ./mklist.py > ./notefile/list.txt');
 

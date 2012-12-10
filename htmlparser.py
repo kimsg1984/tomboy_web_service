@@ -5,7 +5,7 @@
 # Email: Kimsg1948@gmail.com
 # irc.freenode.net #ubuntu-ko Sungyo
 
-# $python ./htmlparser.py $edited_file_name $notefile
+# $result1=shell_exec("python ./htmlparser.py $edited_file_name");
 
 import re
 import os
@@ -60,10 +60,18 @@ def xmlTag(content_xml, meta_data):
 	return content_xml
 
 def getCallResult(cmdARGS):
-  fd_popen = subprocess.Popen(cmdARGS.split(), stdout=subprocess.PIPE).stdout
-  data = fd_popen.read().strip()
-  fd_popen.close()
-  return data
+	fd_popen = subprocess.Popen(cmdARGS.split(), stdout=subprocess.PIPE).stdout
+	data = fd_popen.read().strip()
+	fd_popen.close()
+	return data
+
+# def addTag(content_xml):
+# 	listFile = open('./notefile/list.txt')
+# 	content = listFile.read()
+# 	titles = re.findall(r'{link}%s{/link}' %title, content)
+# 	echo '%s' %titles
+# 	return content_xml
+
 
 WORK_DIR = './notefile'
 
@@ -103,7 +111,10 @@ except:
 
 content_xml = xmlTag(content_xml, meta_data)
 
-
+try:
+	content_xml = addTag(content_xml)
+except:
+	null = 0
 
 # print '%s' %content_xml
 
@@ -111,28 +122,7 @@ content_xml_file = open('./%s.xml' %sys.argv[1], 'w')
 content_xml_file.write('%s' %content_xml)
 content_xml_file.close()
 
-# notefile = open(os.path.join(WORK_DIR, notefile_sync), 'w')
-# notefile.write(content_xml)
-# notefile.close()
-
-# print '%s' %notefileurl
-
-# print '%s' %notefile_sync
 
 
 
 print 'succeed'
-# print '\'cant\'t save the file : %s\''%(notefile_sync)
-# try:
-# except:
-
-
-
-
-
-	# time_after=int(os.path.getmtime(os.path.join(WORK_DIR, sys.argv[2])))
-
-# 	# if time_before != time_after:
-
-# 	# else:
-# 	# 	print 'fail to save. you shoud check the \'Permittion\' '
