@@ -49,6 +49,6 @@ echo $content?>"><input type="submit" value="EDIT">
 </form><Script LANGUAGE="javascript"></script><?echo $content_html?></div>
 
 <HR NOSHADE>
-
+<form action="dylink.php" method="GET"><input type="text" name="title"><input type="submit" value="이동"></form>
 <!-- <A href="<?echo "notefile/$notefile" ?>">XMLfile</A> | <A href="list.txt">LIST</A> -->
 </body></html>
