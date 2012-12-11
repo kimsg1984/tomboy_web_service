@@ -14,15 +14,13 @@ import sys
 import subprocess
 import datetime
 
+
 def writeLog(comment):
 	t = datetime.datetime.now()
 	comment = '%s : %s : %s \n ' %(t, sys.argv[0], comment)
 	logfile1 = open('./log.txt', 'a')
 	logfile1.write('%s' %comment)
 	logfile1.close()
-	logfile2 = open('./log/%s.txt' %comment, 'w')
-	logfile2.write('%s' %comment)
-	logfile2.close()
 	# writeLog('def addTag, for l in link : %s fail to remove ' %l)
 
 def replace_decorations(string_content):
@@ -99,23 +97,22 @@ def addTag(content_xml):
 	for t in titles:
 		try:
 			content_xml = content_xml.replace( ' %s ' %t, '<link:internal>%s</link:internal>' %t)
-			print '%s' %t
+			
 		except:
 			null = 0
 
 		
 	return content_xml
 
-
+writeLog('start to parse %s' %sys.argv[1])
 WORK_DIR = './notefile'
-
 edited_file = open(sys.argv[1])
 content = edited_file.read()
 edited_file.close()
 
 
 
-content_html = content.replace('target="_blank" ', '')
+content_html = content.replace('target="_blank"', '')
 title = re.findall(r'<title>(.+)</title>', content_html)
 meta_data = re.findall(r'<!--{meta_data}(.+){/meta_data}-->', content_html)
 content_link=content_html.replace('</a>', '</a>\n')
@@ -145,10 +142,10 @@ except:
 
 content_xml = xmlTag(content_xml, meta_data)
 
-try:
-	content_xml = addTag(content_xml)
-except:
-	writeLog('addTag error')
+# try:
+# 	content_xml = addTag(content_xml)
+# except:
+# 	writeLog('addTag error')
 
 content_xml_file = open('./%s.xml' %sys.argv[1], 'w')
 content_xml_file.write('%s' %content_xml)

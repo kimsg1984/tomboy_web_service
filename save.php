@@ -21,29 +21,31 @@ $result1=shell_exec("python ./htmlparser.py $edited_file_name");
 $notefile_sync=shell_exec("python ./notefile_sync.py $notefile");
 $save=shell_exec("python ./save.py \"$edited_file_name.xml\" $notefile_sync");
 
-echo "python ./htmlparser.py $edited_file_name.xml $notefile_sync <br>";
-echo "notefile_sync : $notefile_sync<br>";
-
-echo "$result1<br> $notefile_sync, <br> $save";
+// echo "python ./htmlparser.py $edited_file_name.xml $notefile_sync <br>";
+echo "htmlparser.py result : $result1<br> notefile_sync: $notefile_sync, <br>save.py result: $save<br>" ;
 
 
 
 
 
 if ($save == "succeed\n"){
-header("Location:./dylink.php?title=$title");
+	shell_exec('python ./mklist.py > ./notefile/list.txt');
+	// unlink("$edited_file_name");
+	// unlink("$edited_file_name.xml");
+	// shell_exec("mv ./notefile/$notefile ./notefile/backup/$title$edited_file_name");
+	echo "mv ./notefile/$notefile ./notefile/backup/$title.$edited_file_name";
+	header("Location:./dylink.php?title=$title");
+
+
+
+
 }
 
 
 else {
-	echo $result;
+	echo 'error';
 }
 	
-echo 'test';
-// unlink("$edited_file_name");
-// unlink("$edited_file_name.xml");
-
-shell_exec('python ./mklist.py > ./notefile/list.txt');
 
 ?>
 

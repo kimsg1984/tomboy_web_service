@@ -27,9 +27,6 @@ def readLastVer(WORK_DIR):
 	return last_ver
 
 def writeToManifest(WORK_DIR, folder2, list_content):
-	null = 0
-	# manifest=os.path.join(WORK_DIR, 'manifest.xml')
-	
 	listFile = open(os.path.join(WORK_DIR, 'manifest.xml'), 'w')
 	listFile.write(list_content)
 	listFile.close()
@@ -94,17 +91,17 @@ except:
 	server_ver = last_ver + 1
 
 # if last_ver == server_ver:
-if last_ver == server_ver:
-	# print 'same'
-	notefile_edited=editNotefile(notefile, server_ver)
-	syncFolderNManifest(WORK_DIR, last_ver, server_ver, notefile_edited)
+# if last_ver == server_ver:
+# 	# print 'same'
+# 	notefile_edited=editNotefile(notefile, server_ver)
+# 	syncFolderNManifest(WORK_DIR, last_ver, server_ver, notefile_edited)
 
-else:
+# else:
 	# print 'not same'
-	server_ver = last_ver + 1
-	notefile_edited = editNotefile(notefile, server_ver)
-	syncFolderNManifest(WORK_DIR, last_ver, server_ver, notefile_edited)
-	writeToServer(server_ver)
+server_ver = last_ver + 1
+notefile_edited = editNotefile(notefile, server_ver)
+syncFolderNManifest(WORK_DIR, last_ver, server_ver, notefile_edited)
+writeToServer(server_ver)
 	
 
 print '%s' %notefile_edited
