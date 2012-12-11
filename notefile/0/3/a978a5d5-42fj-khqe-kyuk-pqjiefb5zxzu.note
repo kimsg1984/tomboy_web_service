@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>링크</title><text xml:space="preserve"><note-content version="0.1">링크
+다른 페이지에서 '링크'라는 단어를 적어주면 링크가 걸립니다.
+
+단, 단어 앞뒤에 스페이스(' ')를 주어야 합니다.
+
+  <link:internal>start</link:internal> &lt;-- 돌아가기
+
+
+ </note-content></text> </note>
