@@ -9,13 +9,14 @@ import re
 import os
 import urllib
 import sys
-import subprocess
+import datetime
 
-def getCallResult(cmdARGS):
-	fd_popen = subprocess.Popen(cmdARGS.split(), stdout=subprocess.PIPE).stdout
-	data = fd_popen.read().strip()
-	fd_popen.close()
-	return data
+def writeLog(comment):
+	t = datetime.datetime.now()
+	comment = '%s : %s : %s \n ' %(t, sys.argv[0], comment)
+	logfile = open('./log.txt', 'a')
+	logfile.write('%s' %comment)
+	logfile.close()
 
 def readLastVer(WORK_DIR):
 	listFile = open(os.path.join(WORK_DIR, 'manifest.xml'))
@@ -41,10 +42,10 @@ def syncFolderNManifest(WORK_DIR, last_ver, server_ver, notefile_edited):
 	folder2=os.path.join(folder1, notefile_edited_split[1])
 	if not os.path.isdir(folder1):
 		os.mkdir(os.path.join(folder1))
-		getCallResult("chmod 777 %s" %os.path.join(folder1))
+		
 	if not os.path.isdir(folder2):
 		os.mkdir(os.path.join(folder2))
-		getCallResult("chmod 777 %s" %os.path.join(folder2))
+		
 	listFile = open(os.path.join(WORK_DIR, 'manifest.xml'))
 	list_content = listFile.read()
 	listFile.close()
@@ -90,14 +91,6 @@ except:
 	# 'first time!!'
 	server_ver = last_ver + 1
 
-# if last_ver == server_ver:
-# if last_ver == server_ver:
-# 	# print 'same'
-# 	notefile_edited=editNotefile(notefile, server_ver)
-# 	syncFolderNManifest(WORK_DIR, last_ver, server_ver, notefile_edited)
-
-# else:
-	# print 'not same'
 server_ver = last_ver + 1
 notefile_edited = editNotefile(notefile, server_ver)
 syncFolderNManifest(WORK_DIR, last_ver, server_ver, notefile_edited)
