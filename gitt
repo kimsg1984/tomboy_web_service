@@ -2,7 +2,8 @@
 # this script is ontouch git push script
 # how to use: 
 # ~$ sh gitt "write your commit as you want"
-
+rm -f 0.*.txt
+rm -f 0.*.txt.xml
 git add *
 git push 
 git commit -m "$1"
