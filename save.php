@@ -28,7 +28,7 @@ $save=shell_exec("python ./save.py \"$edited_file_name.xml\" $notefile_sync");
 
 echo "python ./htmlparser.py $edited_file_name -> $result1<br>";
 echo "python ./notefile_sync.py $notefile -> $notefile_sync<br><br>";
-echo "python ./save.py \"$edited_file_name.xml\" $notefile_sync -> $save";
+echo "python ./save.py \"$edited_file_name.xml\" $notefile_sync -> $save<br>";
 
 if ($save == "succeed\n"){
 	shell_exec('python ./mklist.py > ./notefile/list.txt');
@@ -36,14 +36,14 @@ if ($save == "succeed\n"){
 	unlink("$edited_file_name.xml");
 	// shell_exec("mv ./notefile/$notefile ./notefile/backup/$title$edited_file_name");
 	// echo "mv ./notefile/$notefile ./notefile/backup/$title.$edited_file_name";
-	// header("Location:./dylink.php?title=$title");
+	header("Location:./dylink.php?title=$title");
 
 
 }
 
 
 else {
-	echo 'error';
+	echo '.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>error';
 }
 	
 

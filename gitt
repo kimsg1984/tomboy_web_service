@@ -4,6 +4,9 @@
 # ~$ sh gitt "write your commit as you want"
 rm -f 0.*.txt
 rm -f 0.*.txt.xml
+echo "rm -f 0.*.txt" 
+echo "rm -f 0.*.txt.xml"
+
 git add *
 git push 
 git commit -m "$1"

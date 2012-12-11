@@ -14,13 +14,16 @@
 	$code4 = RandStr(4) ;
 	$code5 = RandStr(12) ;
 	$notefile = "0/0/$code1-$code2-$code3-$code4-$code5.note";
-	// echo "$notefile<br>";
+	echo "$notefile<br>";
 	// header("Location:./edit.php?notefile=$notefile");
 
 	if ($save == "succeed\n"){
-		
-	}
-
+		shell_exec('python ./mklist.py > ./notefile/list.txt');
+		unlink("$edited_file_name");
+		unlink("$edited_file_name.xml");
+		// shell_exec("mv ./notefile/$notefile ./notefile/backup/$title$edited_file_name");
+		// echo "mv ./notefile/$notefile ./notefile/backup/$title.$edited_file_name";
+		header("Location:./dylink.php?title=$title");
 
 
 
