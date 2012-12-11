@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>start</title><text xml:space="preserve"><note-content version="0.1">start
-<link:internal>SongList2013-1월</link:internal> | <link:internal>교회</link:internal> | <link:internal>웹톰</link:internal> | <link:internal>test</link:internal> | <strikethrough>
+<a  href="dylink.php?title=SongList2013-1월">SongList2013-1월</a> | <a  href="dylink.php?title=교회">교회</a> | <a  href="dylink.php?title=웹톰">웹톰</a> | <a  href="dylink.php?title=test">test</a> | <strikethrough>
 </strikethrough>
-<link:internal>Hackers Vocabulary</link:internal>
+<a  href="dylink.php?title=Hackers Vocabulary">Hackers Vocabulary</a>
 웹톰
 웹톰 
  웹톰
- 웹톰 :
+<link:internal>웹톰</link:internal>:
 a웹톰
 웹톰f
 

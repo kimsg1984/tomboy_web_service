@@ -1,29 +1,24 @@
-2012-12-11 13:50:16.765223 : ./htmlparser.py : start to parse 0.68816300.edited_file.txt 
- 2012-12-11 13:50:16.768882 : ./htmlparser.py : def addTag, for l in link : hackers voca 11" target="_blank fail to remove  
- 2012-12-11 13:50:16.769100 : ./htmlparser.py : def addTag, for l in link : hackers voca 12" target="_blank fail to remove  
- 2012-12-11 13:50:16.769181 : ./htmlparser.py : def addTag, for l in link : hackers voca 13" target="_blank fail to remove  
- 2012-12-11 13:50:16.947187 : ./save.py : '0.68816300.edited_file.txt.xml' file start to save to '0/71/53b0f03e-f3a7-4b34-92a2-9ac5ebe25ad7.note' 
- 2012-12-11 13:52:06.757555 : ./htmlparser.py : start to parse 0.68144800.edited_file.txt 
- 2012-12-11 13:52:06.761247 : ./htmlparser.py : def addTag, for l in link : hackers voca 11" target="_blank fail to remove  
- 2012-12-11 13:52:06.761472 : ./htmlparser.py : def addTag, for l in link : hackers voca 12" target="_blank fail to remove  
- 2012-12-11 13:52:06.761557 : ./htmlparser.py : def addTag, for l in link : hackers voca 13" target="_blank fail to remove  
- 2012-12-11 13:52:06.942112 : ./save.py : '0.68144800.edited_file.txt.xml' file start to save to '0/72/53b0f03e-f3a7-4b34-92a2-9ac5ebe25ad7.note' 
- 2012-12-11 13:56:53.225040 : ./htmlparser.py : start to parse 0.14880200.edited_file.txt 
- 2012-12-11 13:56:53.228691 : ./htmlparser.py : def addTag, for l in link : hackers voca 11" target="_blank fail to remove  
- 2012-12-11 13:56:53.228915 : ./htmlparser.py : def addTag, for l in link : hackers voca 12" target="_blank fail to remove  
- 2012-12-11 13:56:53.228999 : ./htmlparser.py : def addTag, for l in link : hackers voca 13" target="_blank fail to remove  
- 2012-12-11 13:56:53.406696 : ./save.py : '0.14880200.edited_file.txt.xml' file start to save to '0/73/53b0f03e-f3a7-4b34-92a2-9ac5ebe25ad7.note' 
- 2012-12-11 14:11:37.084522 : ./htmlparser.py : start to parse 0.00799900.edited_file.txt 
- 2012-12-11 14:11:37.088242 : ./htmlparser.py : def addTag, for l in link : songlist2013-1월" target="_blank fail to remove  
- 2012-12-11 14:11:37.088483 : ./htmlparser.py : def addTag, for l in link : 교회" target="_blank fail to remove  
- 2012-12-11 14:11:37.088571 : ./htmlparser.py : def addTag, for l in link : 웹톰" target="_blank fail to remove  
- 2012-12-11 14:11:37.088650 : ./htmlparser.py : def addTag, for l in link : test" target="_blank fail to remove  
- 2012-12-11 14:11:37.088727 : ./htmlparser.py : def addTag, for l in link : hackers vocabulary" target="_blank fail to remove  
- 2012-12-11 14:11:37.266960 : ./save.py : '0.00799900.edited_file.txt.xml' file start to save to '0/1/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 14:16:01.391227 : ./htmlparser.py : start to parse 0.31460400.edited_file.txt 
- 2012-12-11 14:16:01.570939 : ./save.py : '0.31460400.edited_file.txt.xml' file start to save to '0/3/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 14:19:06.932705 : ./htmlparser.py : start to parse 0.85655800.edited_file.txt 
- 2012-12-11 14:19:07.113526 : ./save.py : '0.85655800.edited_file.txt.xml' file start to save to '0/4/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 14:20:24.884378 : ./htmlparser.py : start to parse 0.80760200.edited_file.txt 
- 2012-12-11 14:20:25.064586 : ./save.py : '0.80760200.edited_file.txt.xml' file start to save to '0/5/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+2012-12-11 14:36:46.847389 : ./htmlparser.py : start to parse 0.77099200.edited_file.txt 
+ 2012-12-11 14:36:47.029376 : ./save.py : '0.77099200.edited_file.txt.xml' file start to save to '0/12/04854f9e-19cc-4b46-b363-234f5bc45d6f.note' 
+ 2012-12-11 14:44:15.988367 : ./htmlparser.py : start to parse 0.91186100.edited_file.txt 
+ 2012-12-11 14:44:16.171899 : ./save.py : '0.91186100.edited_file.txt.xml' file start to save to '0/13/04854f9e-19cc-4b46-b363-234f5bc45d6f.note' 
+ 2012-12-11 14:44:50.357586 : ./htmlparser.py : start to parse 0.28203300.edited_file.txt 
+ 2012-12-11 14:44:50.539773 : ./save.py : '0.28203300.edited_file.txt.xml' file start to save to '0/14/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 14:45:11.011418 : ./htmlparser.py : start to parse 0.93465300.edited_file.txt 
+ 2012-12-11 14:45:11.192606 : ./save.py : '0.93465300.edited_file.txt.xml' file start to save to '0/15/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 14:45:35.286352 : htmlparser.py : start to parse test_edited.txt 
+ 2012-12-11 14:45:58.649710 : ./htmlparser.py : start to parse 0.57329200.edited_file.txt 
+ 2012-12-11 14:45:58.830436 : ./save.py : '0.57329200.edited_file.txt.xml' file start to save to '0/16/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 14:46:21.726651 : ./htmlparser.py : start to parse 0.65058400.edited_file.txt 
+ 2012-12-11 14:46:21.908080 : ./save.py : '0.65058400.edited_file.txt.xml' file start to save to '0/17/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 14:47:51.476146 : ./htmlparser.py : start to parse 0.40032700.edited_file.txt 
+ 2012-12-11 14:47:51.659025 : ./save.py : '0.40032700.edited_file.txt.xml' file start to save to '0/18/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 14:48:25.538381 : ./htmlparser.py : start to parse 0.46230800.edited_file.txt 
+ 2012-12-11 14:48:25.720583 : ./save.py : '0.46230800.edited_file.txt.xml' file start to save to '0/19/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 14:49:10.234997 : ./htmlparser.py : start to parse 0.15856400.edited_file.txt 
+ 2012-12-11 14:49:10.416159 : ./save.py : '0.15856400.edited_file.txt.xml' file start to save to '0/20/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 14:49:20.288745 : ./htmlparser.py : start to parse 0.21238900.edited_file.txt 
+ 2012-12-11 14:49:20.470675 : ./save.py : '0.21238900.edited_file.txt.xml' file start to save to '0/21/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 14:50:05.057463 : ./htmlparser.py : start to parse 0.98113600.edited_file.txt 
+ 2012-12-11 14:50:05.239218 : ./save.py : '0.98113600.edited_file.txt.xml' file start to save to '0/22/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
  

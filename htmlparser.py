@@ -24,6 +24,7 @@ def writeLog(comment):
 	# writeLog('def addTag, for l in link : %s fail to remove ' %l)
 
 def replace_decorations(string_content):
+    string_content = string_content.replace('&nbsp;', ' ')
     string_content = string_content.replace('</b>', '</bold>')
     string_content = string_content.replace('<b>', '<bold>')
     string_content = string_content.replace('</font>', '</highlight>')
@@ -49,12 +50,12 @@ def content_perser(content_html):
 	content_html = '%s' %replace_decorations(content_html)
 	try:
 		for l in link:
-			content_html = content_html.replace('<a href="dylink.php?title=%s">%s</a>' %(l, l), '<link:internal>%s</link:internal>' %(l))
+			content_html = content_html.replace('<a href="dylink.php?title=%s" >%s</a>' %(l, l), '<link:internal>%s</link:internal>' %(l))
 	except:
 		null = 0 # there is no link:internal
 	try:
 		for lu in linkurl:
-			content_html = content_html.replace('<a href="http://%s">http://%s</a>' %(lu, lu), '<link:url>%s</link:url>' %(lu))
+			content_html = content_html.replace('<a href="http://%s" >http://%s</a>' %(lu, lu), '<link:url>%s</link:url>' %(lu))
 	except:
 		null = 0 # there is no link:url
 	return content_html
@@ -81,12 +82,12 @@ def addTag(content_xml):
 	titles = re.findall(r'{link}(.+){/link}', content)
 	titles.sort()
 	
-	for l in link:
-		l = l.lower()
-		try: 
-			titles.remove('%s' %l)
-		except:
-			writeLog('def addTag, for l in link : %s fail to remove ' %l)
+	# for l in link:
+	# 	l = l.lower()
+		# try: 
+		# 	titles.remove('%s' %l)
+		# except:
+		# 	writeLog('def addTag, for l in link : %s fail to remove ' %l)
 	try:
 		titles.remove('%s' %title)
 	except:
@@ -96,7 +97,7 @@ def addTag(content_xml):
 
 	for t in titles:
 		try:
-			content_xml = content_xml.replace( ' %s ' %t, '<link:internal>%s</link:internal>' %t)
+			content_xml = content_xml.replace( ' %s ' %t, ' <link:internal>%s</link:internal> ' %t)
 			
 		except:
 			null = 0
@@ -117,8 +118,8 @@ title = re.findall(r'<title>(.+)</title>', content_html)
 meta_data = re.findall(r'<!--{meta_data}(.+){/meta_data}-->', content_html)
 content_link=content_html.replace('</a>', '</a>\n')
 content_link = content_link.replace('<br>', '\n')
-link = re.findall(r'<a href="dylink.php\?title=(.+)">', content_link)
-linkurl = re.findall(r'<a href="http://(.+)">', content_link)
+link = re.findall(r'<a href="dylink.php\?title=(.+)" >', content_link)
+linkurl = re.findall(r'<a href="http://(.+)" >', content_link)
 content_html = re.findall(r'</title>(.+)<!--{meta_data}', content_html)
 content_html = content_html[0].replace('<br>', '\n')
 
@@ -142,10 +143,10 @@ except:
 
 content_xml = xmlTag(content_xml, meta_data)
 
-# try:
-# 	content_xml = addTag(content_xml)
-# except:
-# 	writeLog('addTag error')
+try:
+	content_xml = addTag(content_xml)
+except:
+	writeLog('addTag error')
 
 content_xml_file = open('./%s.xml' %sys.argv[1], 'w')
 content_xml_file.write('%s' %content_xml)

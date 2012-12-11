@@ -49,5 +49,6 @@ echo $content?>"><input type="submit" value="EDIT">
 </form><Script LANGUAGE="javascript"></script><?echo $content_html?></div>
 
 <HR NOSHADE>
+
 <!-- <A href="<?echo "notefile/$notefile" ?>">XMLfile</A> | <A href="list.txt">LIST</A> -->
 </body></html>

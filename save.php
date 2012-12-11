@@ -33,7 +33,7 @@ if ($save == "succeed\n"){
 	// unlink("$edited_file_name");
 	// unlink("$edited_file_name.xml");
 	// shell_exec("mv ./notefile/$notefile ./notefile/backup/$title$edited_file_name");
-	echo "mv ./notefile/$notefile ./notefile/backup/$title.$edited_file_name";
+	// echo "mv ./notefile/$notefile ./notefile/backup/$title.$edited_file_name";
 	header("Location:./dylink.php?title=$title");
 
 

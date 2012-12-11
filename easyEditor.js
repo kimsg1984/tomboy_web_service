@@ -220,7 +220,7 @@ easyEditor.prototype.cmd = function(btn, order, value)
 		break;
 		case "hyperlink": 	
 			var link_text = (self.sel_html) ? self.sel_html : easyUtil._linktxt.value;
-			var html = "<a href='"+easyUtil._linktxt.value+"' target='_blank'>"+link_text+"</a>";
+			var html = "<a href='"+easyUtil._linktxt.value+"'>"+link_text+"</a>";
 			self.innerHTML(html);			
 		break;
 		case "color": case "hilite":
@@ -402,7 +402,7 @@ var easyUtil = {
 	{	
 		if(easyUtil._abouttbl) return;
 		var s="<span style='color:#ff6600'>이지 웹에디터</span><br/>버전 "+easyConfig.version+" <br/>";
-		s +="도움 <a href='http://cafe.daum.net/easyeditor' target='_blank'>http://cafe.daum.net/easyeditor</a>";
+		s +="도움 <a href='http://cafe.daum.net/easyeditor'>http://cafe.daum.net/easyeditor</a>";
 		var d = easyUtil.getDiv(easyConfig.name+"_abouttbl",s);
 		d.style.font = "9pt 돋움";	d.style.lineHeight ="150%";	
 		document.body.appendChild(d); easyUtil._abouttbl = d;
@@ -432,7 +432,10 @@ var easyUtil = {
 		{
 			s += "<a href='javascript:;' onclick=\"easyUtil._editor.cmd(null, easyUtil.order,'"+(i+1)+"');\" style='font:"+size[i]+"pt 굴림;'>가나다라 ("+size[i]+")</a><br />";
 		}
-		var div = easyUtil.getDiv(easyConfig.name+"_sizetbl",s);
+		var div = easyUtil.getDiv(e
+
+
+			asyConfig.name+"_sizetbl",s);
 		div.style.padding = "5px";
 		document.body.appendChild(div);
 		easyUtil._sizetbl = div;
