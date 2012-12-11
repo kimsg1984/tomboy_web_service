@@ -21,4 +21,26 @@
  2012-12-11 14:49:20.470675 : ./save.py : '0.21238900.edited_file.txt.xml' file start to save to '0/21/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
  2012-12-11 14:50:05.057463 : ./htmlparser.py : start to parse 0.98113600.edited_file.txt 
  2012-12-11 14:50:05.239218 : ./save.py : '0.98113600.edited_file.txt.xml' file start to save to '0/22/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 16:13:04.342433 : ./htmlparser.py : start to parse 0.26640800.edited_file.txt 
+ 2012-12-11 16:23:42.053826 : ./htmlparser.py : start to parse 0.97672000.edited_file.txt 
+ 2012-12-11 16:26:53.870742 : ./htmlparser.py : start to parse 0.79491400.edited_file.txt 
+ 2012-12-11 16:29:02.174879 : ./htmlparser.py : start to parse 0.09942600.edited_file.txt 
+ 2012-12-11 16:29:40.096282 : ./htmlparser.py : start to parse 0.02022300.edited_file.txt 
+ 2012-12-11 16:30:05.366205 : ./htmlparser.py : start to parse 0.28959300.edited_file.txt 
+ 2012-12-11 16:30:57.004295 : ./htmlparser.py : start to parse 0.92682500.edited_file.txt 
+ 2012-12-11 16:32:02.145570 : ./htmlparser.py : start to parse 0.06851200.edited_file.txt 
+ 2012-12-11 16:32:02.330189 : ./save.py : '0.06851200.edited_file.txt.xml' file start to save to '0/23/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 16:32:10.262667 : ./htmlparser.py : start to parse 0.18405900.edited_file.txt 
+ 2012-12-11 16:32:10.446930 : ./save.py : '0.18405900.edited_file.txt.xml' file start to save to '0/24/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 17:32:05.793811 : ./htmlparser.py : start to parse 0.71645500.edited_file.txt 
+ 2012-12-11 17:33:41.804049 : ./htmlparser.py : start to parse 0.72549000.edited_file.txt 
+ 2012-12-11 17:43:19.022848 : ./htmlparser.py : start to parse 0.94519800.edited_file.txt 
+ 2012-12-11 17:46:17.759858 : ./htmlparser.py : start to parse 0.68149000.edited_file.txt 
+ 2012-12-11 18:00:36.771106 : ./htmlparser.py : start to parse 0.69283200.edited_file.txt 
+ 2012-12-11 18:00:36.952012 : ./save.py : '0.69283200.edited_file.txt.xml' file start to save to '0/25/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 18:11:46.564097 : ./htmlparser.py : start to parse 0.48799100.edited_file.txt 
+ 2012-12-11 18:11:46.746853 : ./save.py : '0.48799100.edited_file.txt.xml' file start to save to '0/26/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-11 18:12:03.337382 : ./htmlparser.py : start to parse 0.26073800.edited_file.txt 
+ 2012-12-11 18:12:24.146125 : ./htmlparser.py : start to parse 0.06983200.edited_file.txt 
+ 2012-12-11 18:12:24.323475 : ./save.py : '0.06983200.edited_file.txt.xml' file start to save to '0/27/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
  

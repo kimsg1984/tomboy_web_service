@@ -50,12 +50,12 @@ def content_perser(content_html):
 	content_html = '%s' %replace_decorations(content_html)
 	try:
 		for l in link:
-			content_html = content_html.replace('<a href="dylink.php?title=%s" >%s</a>' %(l, l), '<link:internal>%s</link:internal>' %(l))
+			content_html = content_html.replace('<a href="dylink.php?title=%s">%s</a>' %(l, l), '<link:internal>%s</link:internal>' %(l))
 	except:
 		null = 0 # there is no link:internal
 	try:
 		for lu in linkurl:
-			content_html = content_html.replace('<a href="http://%s" >http://%s</a>' %(lu, lu), '<link:url>%s</link:url>' %(lu))
+			content_html = content_html.replace('<a href="http://%s">http://%s</a>' %(lu, lu), '<link:url>%s</link:url>' %(lu))
 	except:
 		null = 0 # there is no link:url
 	return content_html
@@ -113,13 +113,13 @@ edited_file.close()
 
 
 
-content_html = content.replace('target="_blank"', '')
+content_html = content.replace(' target="_blank"', '')
 title = re.findall(r'<title>(.+)</title>', content_html)
 meta_data = re.findall(r'<!--{meta_data}(.+){/meta_data}-->', content_html)
 content_link=content_html.replace('</a>', '</a>\n')
 content_link = content_link.replace('<br>', '\n')
-link = re.findall(r'<a href="dylink.php\?title=(.+)" >', content_link)
-linkurl = re.findall(r'<a href="http://(.+)" >', content_link)
+link = re.findall(r'<a href="dylink.php\?title=(.+)">', content_link)
+linkurl = re.findall(r'<a href="http://(.+)">', content_link)
 content_html = re.findall(r'</title>(.+)<!--{meta_data}', content_html)
 content_html = content_html[0].replace('<br>', '\n')
 

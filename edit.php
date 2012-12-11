@@ -1,7 +1,43 @@
 <html>
 <head>
 <? include('head.html'); 
-$content=explode("<!--{meta_data}", $_POST['content']);
+	function RandStr($len){
+		$return_str = "";
+		for ( $i = 0; $i < $len; $i++ ) { 
+			mt_srand((double)microtime()*1000000);
+			$return_str .= substr('0123456789abcdefghijklmnopqrstuvwxyz', mt_rand(0,35), 1); 
+		} 
+		return $return_str;
+	}
+	function mknotefile(){
+		$code1 = RandStr(8) ; 
+		$code2 = RandStr(4) ;
+		$code3 = RandStr(4) ;
+		$code4 = RandStr(4) ;
+		$code5 = RandStr(12) ;
+		$notefile = "0/0/$code1-$code2-$code3-$code4-$code5.note";
+		return $notefile;
+	}
+
+	$notefile=$_POST['notefile'];
+	$check_empty = strlen("$notefile");
+   	   	
+	if ( $check_empty != 0 ) { 
+ 		$title = $_POST['title'];
+		$content=explode("<!--{meta_data}", $_POST['content']);
+		}
+	else { 
+		
+		$title = "";
+		$notefile=mknotefile();
+		$content="<!--{meta_data}{/meta_data}-->";
+		$content=explode("<!--{meta_data}", $content);
+
+		}  
+
+
+
+
  ?>  <!-- 한글출력과 아이폰사이즈에 맞추기 위한 해더 삽입 -->
 <script src="easyEditor.js"></script> <!-- 이지에디터 스크립트 파일 호출 -->
 <script>
@@ -26,8 +62,8 @@ $content=explode("<!--{meta_data}", $_POST['content']);
 <pre>
 </pre>
 	<form  action="save.php" method="POST" onsubmit="chkForm(this)">
-	<input type="text" name="title" Value="<?echo $_POST['title']?>">
-	<input type="hidden" name="notefile" Value="<?echo $_POST['notefile']?>">
+	<input type="text" name="title" Value="<?echo $title?>">
+	<input type="hidden" name="notefile" Value="<?echo $notefile?>">
 	<input type="hidden" name="meta_data" Value="<?echo $content[1]?>">
 	<textarea name="content" id="content"><?echo $content[0]?></textarea>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="저장">
