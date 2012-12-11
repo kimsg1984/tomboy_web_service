@@ -1,3 +1,6 @@
+
+http://ubuntu.or.kr/viewtopic.php?f=4&t=23407
+
 톰보이 웹서비스(Tomboy Web Service)
  
 - 톰보이의 '동기화'파일들을 웹상에서도 읽고, 편집할수 있게 해주는 서비스입니다.
