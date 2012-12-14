@@ -80,40 +80,40 @@ except:
 	print 'fail to make new directory'
 
 
+# try:
+WORK_DIR='./notefile'
+edited_file = open(sys.argv[1])
+content = edited_file.read()
+edited_file.close()
+saveEditedFile(content)
 try:
-	WORK_DIR='./notefile'
-	edited_file = open(sys.argv[1])
-	content = edited_file.read()
-	edited_file.close()
-	saveEditedFile(content)
+	list_content = list_content.replace('<sync revision="%d" server-id' %(last_server_ver),'<sync revision="%d" server-id' %(server_ver))
 	try:
-		list_content = list_content.replace('<sync revision="%d" server-id' %(last_server_ver),'<sync revision="%d" server-id' %(server_ver))
-		try:
-			list_content = list_content.replace('  <note id="%s" rev="%s" />\n'%(notefile_id[0], last_note_ver[0]), '')
-			list_content = list_content.replace('</sync>', '  <note id="%s" rev="%d" />\n</sync>' %(notefile_id[0], server_ver))
-		except:
-			# it's first time...!!
-			writeLog('it\'s first time. id: %s' %notefile_id[0])
-			list_content = list_content.replace('</sync>', '  <note id="%s" rev="%d" />\n</sync>' %(notefile_id[0], server_ver))
-		try:
-			# writeToManifest(folder2, list_content)
-			print 'succeed'
-			# try:
-			# 	writeToServer(server_ver)
-			# except:
-			# 	writeLog('fail writeToServer:%s' %server_ver)
-			# 	print 'fail writeToServer:%s' %server_ver
-		except:
-			print 'fil to writeToManifest'
-			writeLog('fail writeToManifest')
+		list_content = list_content.replace('  <note id="%s" rev="%s" />\n'%(notefile_id[0], last_note_ver[0]), '')
+		list_content = list_content.replace('</sync>', '  <note id="%s" rev="%d" />\n</sync>' %(notefile_id[0], server_ver))
 	except:
-		writeLog('fail  write server id :%s' %server_ver)
-		print 'fail  write server id :%s' %server_ver
+		# it's first time...!!
+		writeLog('it\'s first time. id: %s' %notefile_id[0])
+		list_content = list_content.replace('</sync>', '  <note id="%s" rev="%d" />\n</sync>' %(notefile_id[0], server_ver))
+	try:
+		writeToManifest(folder2, list_content)
+		print 'succeed'
+		# try:
+		# 	writeToServer(server_ver)
+		# except:
+		# 	writeLog('fail writeToServer:%s' %server_ver)
+		# 	print 'fail writeToServer:%s' %server_ver
+	except:
+		print 'fil to writeToManifest'
+		writeLog('fail writeToManifest')
+except:
+	writeLog('fail  write server id :%s' %server_ver)
+	print 'fail  write server id :%s' %server_ver
 
 	
-except:
-	writeLog('fail open the file')
-	print 'fail open the file'
+# except:
+# 	writeLog('fail open the file')
+# 	print 'fail open the file'
 
 
 
