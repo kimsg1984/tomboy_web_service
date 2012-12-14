@@ -104,4 +104,10 @@
  2012-12-14 20:30:51.072607 : ./save.py : '0.83455600.edited_file.txt.xml' file start to save to '0/2/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
  2012-12-14 20:30:51.074689 : ./save.py : save EditedFile 
  2012-12-14 20:33:58.144683 : checkmanifest.py : Start to check :manifest.xml 
+ 2012-12-15 00:51:02.558623 : ./htmlparser.py : start to parse 0.48183600.edited_file.txt 
+ 2012-12-15 00:51:02.727294 : ./save.py : '0.48183600.edited_file.txt.xml' file start to save to '0/7/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-15 00:51:02.743959 : ./save.py : save EditedFile 
+ 2012-12-15 00:53:36.648862 : ./htmlparser.py : start to parse 0.57223400.edited_file.txt 
+ 2012-12-15 00:53:36.816043 : ./save.py : '0.57223400.edited_file.txt.xml' file start to save to '0/1/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
+ 2012-12-15 00:53:36.818094 : ./save.py : save EditedFile 
  
