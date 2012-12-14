@@ -1,164 +1,32 @@
-2012-12-11 21:47:22.946868 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:47:22.949507 : ./save.py : fail syncManifest 
- 2012-12-11 21:48:29.225437 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:48:29.228368 : ./save.py : fail syncManifest 
- 2012-12-11 21:49:06.360319 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:49:06.363234 : ./save.py : fail syncManifest 
- 2012-12-11 21:49:32.079494 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:49:32.082339 : ./save.py : fail syncManifest 
- 2012-12-11 21:49:54.860903 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:49:59.668783 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:52:15.024032 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:52:43.758808 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:53:00.870329 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:55:43.681939 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:55:43.684882 : ./save.py : fail syncManifest 
- 2012-12-11 21:56:15.200282 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:56:15.203261 : ./save.py : fail syncManifest 
- 2012-12-11 21:56:28.799524 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:57:26.141063 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:57:26.144001 : ./save.py : fail syncManifest 
- 2012-12-11 21:58:43.173024 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:58:47.687200 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:58:47.690167 : ./save.py : fail syncManifest 
- 2012-12-11 21:59:23.306179 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:59:57.512417 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 21:59:57.515371 : ./save.py : fail syncManifest 
- 2012-12-11 22:00:59.285243 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:01:25.668569 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:01:33.956869 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:01:41.660117 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:02:02.212747 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:02:25.690347 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:02:38.163062 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:02:38.167153 : ./save.py : fail writeToServer 
- 2012-12-11 22:02:39.593861 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:02:39.597876 : ./save.py : fail writeToServer 
- 2012-12-11 22:03:51.079835 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:03:51.084314 : ./save.py : fail writeToServer 
- 2012-12-11 22:09:18.413250 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:09:18.417627 : ./save.py : fail writeToServer 
- 2012-12-11 22:09:27.228894 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:09:56.154848 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:10:18.874202 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:11:01.465164 : ./save.py : '0.32327900.edited_file.txt.xml' file start to save to '0/28/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:11:49.868280 : ./htmlparser.py : start to parse 0.79147900.edited_file.txt 
- 2012-12-11 22:11:50.037255 : ./save.py : '0.79147900.edited_file.txt.xml' file start to save to '0/45/04854f9e-19cc-4b46-b363-234f5bc45d6f.note' 
- 2012-12-11 22:12:03.524481 : ./htmlparser.py : start to parse 0.44787800.edited_file.txt 
- 2012-12-11 22:12:03.691746 : ./save.py : '0.44787800.edited_file.txt.xml' file start to save to '0/46/3v4zwv06-ng80-9ycj-cfz9-jqhkppprytlk.note' 
- 2012-12-11 22:13:53.742477 : ./save.py : '0.44787800.edited_file.txt.xml' file start to save to '0/46/3v4zwv06-ng80-9ycj-cfz9-jqhkppprytlk.note' 
- 2012-12-11 22:13:53.744212 : ./save.py : fail open the file 
- 2012-12-11 22:15:04.320027 : ./save.py : '0.44787800.edited_file.txt.xml' file start to save to '0/46/3v4zwv06-ng80-9ycj-cfz9-jqhkppprytlk.note' 
- 2012-12-11 22:15:04.321711 : ./save.py : fail open the file 
- 2012-12-11 22:22:01.180247 : ./htmlparser.py : start to parse 0.10343900.edited_file.txt 
- 2012-12-11 22:22:20.281203 : ./htmlparser.py : start to parse 0.20394900.edited_file.txt 
- 2012-12-11 22:22:34.627439 : ./htmlparser.py : start to parse 0.55081600.edited_file.txt 
- 2012-12-11 22:22:58.522326 : ./htmlparser.py : start to parse 0.44531500.edited_file.txt 
- 2012-12-11 22:22:58.690599 : ./save.py : '0.44531500.edited_file.txt.xml' file start to save to '0/46/ejkgzed9-nzcs-i7e4-atyc-862kaa0dx0xg.note' 
- 2012-12-11 22:23:39.607320 : ./htmlparser.py : start to parse 0.52928100.edited_file.txt 
- 2012-12-11 22:23:39.774180 : ./save.py : '0.52928100.edited_file.txt.xml' file start to save to '0/46/ejkgzed9-nzcs-i7e4-atyc-862kaa0dx0xg.note' 
- 2012-12-11 22:34:10.384604 : ./save.py : '0.44787800.edited_file.txt.xml' file start to save to '0/46/3v4zwv06-ng80-9ycj-cfz9-jqhkppprytlk.note' 
- 2012-12-11 22:34:10.386284 : ./save.py : fail open the file 
- 2012-12-11 22:34:19.282433 : ./htmlparser.py : start to parse 0.20539700.edited_file.txt 
- 2012-12-11 22:34:19.449222 : ./save.py : '0.20539700.edited_file.txt.xml' file start to save to '0/46/bmbkstpr-aco6-1d8e-u3s1-tnc0lc0213fk.note' 
- 2012-12-11 22:34:19.451367 : ./save.py : it's first time. id: bmbkstpr-aco6-1d8e-u3s1-tnc0lc0213fk 
- 2012-12-11 22:36:11.180107 : ./htmlparser.py : start to parse 0.10177900.edited_file.txt 
- 2012-12-11 22:36:11.347450 : ./save.py : '0.10177900.edited_file.txt.xml' file start to save to '0/1/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-11 22:36:55.636969 : ./htmlparser.py : start to parse 0.56026600.edited_file.txt 
- 2012-12-11 22:36:55.804196 : ./save.py : '0.56026600.edited_file.txt.xml' file start to save to '0/2/0l3r0oy4-t5dx-ioeh-ytqv-y8i18mla0hpq.note' 
- 2012-12-11 22:36:55.806349 : ./save.py : it's first time. id: 0l3r0oy4-t5dx-ioeh-ytqv-y8i18mla0hpq 
-<<<<<<< HEAD
- 2012-12-11 23:28:35.622431 : ./htmlparser.py : start to parse 0.54640700.edited_file.txt 
- 2012-12-11 23:28:35.788131 : ./save.py : '0.54640700.edited_file.txt.xml' file start to save to '0/4/53b0f03e-f3a7-4b34-92a2-9ac5ebe25ad7.note' 
- 2012-12-12 01:04:08.903798 : ./htmlparser.py : start to parse 0.82731400.edited_file.txt 
- 2012-12-12 01:04:09.071661 : ./save.py : '0.82731400.edited_file.txt.xml' file start to save to '0/6/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-12 01:28:13.975773 : ./htmlparser.py : start to parse 0.89805100.edited_file.txt 
- 2012-12-12 01:28:14.143221 : ./save.py : '0.89805100.edited_file.txt.xml' file start to save to '0/7/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 01:28:14.145356 : ./save.py : it's first time. id: tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy 
- 2012-12-12 01:50:52.095081 : ./htmlparser.py : start to parse 0.01855200.edited_file.txt 
- 2012-12-12 01:50:52.261323 : ./save.py : '0.01855200.edited_file.txt.xml' file start to save to '0/8/v7coakkk-6kt8-hm5d-7io3-zz3e5evinf75.note' 
- 2012-12-12 01:50:52.263538 : ./save.py : it's first time. id: v7coakkk-6kt8-hm5d-7io3-zz3e5evinf75 
- 2012-12-12 01:53:15.943766 : ./htmlparser.py : start to parse 0.86638300.edited_file.txt 
- 2012-12-12 01:53:16.112292 : ./save.py : '0.86638300.edited_file.txt.xml' file start to save to '0/9/dbf73e38-5a9f-425e-9fa3-43f7d89a9feb.note' 
- 2012-12-12 01:54:09.157706 : ./htmlparser.py : start to parse 0.08119600.edited_file.txt 
- 2012-12-12 01:54:09.325410 : ./save.py : '0.08119600.edited_file.txt.xml' file start to save to '0/10/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 01:56:54.895591 : ./htmlparser.py : start to parse 0.81900300.edited_file.txt 
- 2012-12-12 01:56:55.062647 : ./save.py : '0.81900300.edited_file.txt.xml' file start to save to '0/11/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-12 01:59:27.757459 : ./htmlparser.py : start to parse 0.68075700.edited_file.txt 
- 2012-12-12 01:59:27.925020 : ./save.py : '0.68075700.edited_file.txt.xml' file start to save to '0/12/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 02:00:17.110550 : ./htmlparser.py : start to parse 0.03417500.edited_file.txt 
- 2012-12-12 02:00:17.279640 : ./save.py : '0.03417500.edited_file.txt.xml' file start to save to '0/13/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 02:01:16.905014 : ./htmlparser.py : start to parse 0.82862000.edited_file.txt 
- 2012-12-12 02:01:17.073093 : ./save.py : '0.82862000.edited_file.txt.xml' file start to save to '0/14/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 02:04:59.884640 : ./htmlparser.py : start to parse 0.80820800.edited_file.txt 
- 2012-12-12 02:05:00.053734 : ./save.py : '0.80820800.edited_file.txt.xml' file start to save to '0/15/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 02:05:14.279642 : ./htmlparser.py : start to parse 0.20254900.edited_file.txt 
- 2012-12-12 02:05:14.448904 : ./save.py : '0.20254900.edited_file.txt.xml' file start to save to '0/16/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 02:05:42.346585 : ./htmlparser.py : start to parse 0.27050200.edited_file.txt 
- 2012-12-12 02:05:42.517470 : ./save.py : '0.27050200.edited_file.txt.xml' file start to save to '0/17/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 08:18:29.188549 : ./htmlparser.py : start to parse 0.07801600.edited_file.txt 
- 2012-12-12 08:18:29.374207 : ./save.py : '0.07801600.edited_file.txt.xml' file start to save to '0/18/dbf73e38-5a9f-425e-9fa3-43f7d89a9feb.note' 
- 2012-12-12 09:07:59.748574 : ./htmlparser.py : start to parse 0.67178600.edited_file.txt 
- 2012-12-12 09:07:59.916411 : ./save.py : '0.67178600.edited_file.txt.xml' file start to save to '0/19/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 09:10:05.753887 : ./htmlparser.py : start to parse 0.67710300.edited_file.txt 
- 2012-12-12 09:10:05.920757 : ./save.py : '0.67710300.edited_file.txt.xml' file start to save to '0/20/0d5e71c3-ccf5-4d38-9e75-3c33ddbebfb9.note' 
- 2012-12-12 09:10:23.560682 : ./htmlparser.py : start to parse 0.48432300.edited_file.txt 
- 2012-12-12 09:10:23.730915 : ./save.py : '0.48432300.edited_file.txt.xml' file start to save to '0/21/dbf73e38-5a9f-425e-9fa3-43f7d89a9feb.note' 
- 2012-12-12 09:34:59.414586 : ./htmlparser.py : start to parse 0.33805200.edited_file.txt 
- 2012-12-12 09:34:59.583816 : ./save.py : '0.33805200.edited_file.txt.xml' file start to save to '0/22/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 09:39:34.865170 : ./htmlparser.py : start to parse 0.78879100.edited_file.txt 
- 2012-12-12 09:39:35.034425 : ./save.py : '0.78879100.edited_file.txt.xml' file start to save to '0/23/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 09:40:22.059832 : ./htmlparser.py : start to parse 0.98365700.edited_file.txt 
- 2012-12-12 09:40:22.229640 : ./save.py : '0.98365700.edited_file.txt.xml' file start to save to '0/24/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 09:50:17.706113 : ./htmlparser.py : start to parse 0.62973200.edited_file.txt 
- 2012-12-12 09:50:17.877571 : ./save.py : '0.62973200.edited_file.txt.xml' file start to save to '0/25/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 10:18:54.216153 : ./htmlparser.py : start to parse 0.13918500.edited_file.txt 
- 2012-12-12 10:18:54.385566 : ./save.py : '0.13918500.edited_file.txt.xml' file start to save to '0/26/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 10:55:56.960842 : ./htmlparser.py : start to parse 0.88338200.edited_file.txt 
- 2012-12-12 10:55:57.130401 : ./save.py : '0.88338200.edited_file.txt.xml' file start to save to '0/27/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 11:51:33.068320 : ./htmlparser.py : start to parse 0.99147900.edited_file.txt 
- 2012-12-12 11:51:33.237784 : ./save.py : '0.99147900.edited_file.txt.xml' file start to save to '0/28/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 11:51:58.307692 : ./htmlparser.py : start to parse 0.23028700.edited_file.txt 
- 2012-12-12 11:51:58.476236 : ./save.py : '0.23028700.edited_file.txt.xml' file start to save to '0/29/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 11:53:56.575776 : ./htmlparser.py : start to parse 0.49908600.edited_file.txt 
- 2012-12-12 11:53:56.745556 : ./save.py : '0.49908600.edited_file.txt.xml' file start to save to '0/30/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 11:54:21.796981 : ./save.py : '0.49908600.edited_file.txt.xml' file start to save to '0/30/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 11:54:21.798680 : ./save.py : fail open the file 
- 2012-12-12 11:54:49.197828 : ./save.py : '0.49908600.edited_file.txt.xml' file start to save to '0/30/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 11:54:57.148119 : ./htmlparser.py : start to parse 0.07114600.edited_file.txt 
- 2012-12-12 11:54:57.316737 : ./save.py : '0.07114600.edited_file.txt.xml' file start to save to '0/32/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 12:14:48.627861 : ./htmlparser.py : start to parse 0.55079400.edited_file.txt 
- 2012-12-12 12:14:48.796435 : ./save.py : '0.55079400.edited_file.txt.xml' file start to save to '0/33/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 12:15:09.928223 : ./htmlparser.py : start to parse 0.85171100.edited_file.txt 
- 2012-12-12 12:15:10.097917 : ./save.py : '0.85171100.edited_file.txt.xml' file start to save to '0/34/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 12:17:31.397291 : ./htmlparser.py : start to parse 0.31992800.edited_file.txt 
- 2012-12-12 12:17:31.566126 : ./save.py : '0.31992800.edited_file.txt.xml' file start to save to '0/35/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 12:22:38.468947 : ./htmlparser.py : start to parse 0.39213600.edited_file.txt 
- 2012-12-12 12:22:38.638293 : ./save.py : '0.39213600.edited_file.txt.xml' file start to save to '0/36/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 12:33:50.925287 : ./htmlparser.py : start to parse 0.84903200.edited_file.txt 
- 2012-12-12 12:33:51.094489 : ./save.py : '0.84903200.edited_file.txt.xml' file start to save to '0/37/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 12:35:28.102076 : ./htmlparser.py : start to parse 0.02491000.edited_file.txt 
- 2012-12-12 12:35:28.271569 : ./save.py : '0.02491000.edited_file.txt.xml' file start to save to '0/38/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 12:37:05.571919 : ./htmlparser.py : start to parse 0.49611000.edited_file.txt 
- 2012-12-12 12:37:05.741272 : ./save.py : '0.49611000.edited_file.txt.xml' file start to save to '0/39/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 12:46:28.544884 : ./htmlparser.py : start to parse 0.46831900.edited_file.txt 
- 2012-12-12 12:46:28.713487 : ./save.py : '0.46831900.edited_file.txt.xml' file start to save to '0/40/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
- 2012-12-12 12:54:56.284932 : ./htmlparser.py : start to parse 0.20895300.edited_file.txt 
- 2012-12-12 12:54:56.453935 : ./save.py : '0.20895300.edited_file.txt.xml' file start to save to '0/41/tx8k56he-1h3t-wmme-rc9x-gwk37hmytjqy.note' 
-=======
- 2012-12-11 22:55:33.761515 : ./htmlparser.py : start to parse 0.68531800.edited_file.txt 
- 2012-12-11 22:55:33.763480 : ./htmlparser.py : addTag error 
- 2012-12-11 22:55:33.926354 : ./save.py : '0.68531800.edited_file.txt.xml' file start to save to '0/1/txgkrybk-qy3g-1a9t-zbha-j84yvxxu2agd.note' 
- 2012-12-11 22:56:21.229518 : ./htmlparser.py : start to parse 0.15363700.edited_file.txt 
- 2012-12-11 22:56:21.231455 : ./htmlparser.py : addTag error 
- 2012-12-11 22:56:21.393094 : ./save.py : '0.15363700.edited_file.txt.xml' file start to save to '0/1/txgkrybk-qy3g-1a9t-zbha-j84yvxxu2agd.note' 
- 2012-12-11 22:56:21.394973 : ./save.py : it's first time. id: txgkrybk-qy3g-1a9t-zbha-j84yvxxu2agd 
- 2012-12-11 22:58:16.051843 : ./htmlparser.py : start to parse 0.97485200.edited_file.txt 
- 2012-12-11 22:58:16.215883 : ./save.py : '0.97485200.edited_file.txt.xml' file start to save to '0/2/txgkrybk-qy3g-1a9t-zbha-j84yvxxu2agd.note' 
- 2012-12-11 22:59:07.530201 : ./htmlparser.py : start to parse 0.45414100.edited_file.txt 
- 2012-12-11 22:59:07.693375 : ./save.py : '0.45414100.edited_file.txt.xml' file start to save to '0/3/a978a5d5-42fj-khqe-kyuk-pqjiefb5zxzu.note' 
- 2012-12-11 22:59:07.695290 : ./save.py : it's first time. id: a978a5d5-42fj-khqe-kyuk-pqjiefb5zxzu 
- 2012-12-11 22:59:32.807111 : ./htmlparser.py : start to parse 0.73133200.edited_file.txt 
- 2012-12-11 22:59:32.971035 : ./save.py : '0.73133200.edited_file.txt.xml' file start to save to '0/4/txgkrybk-qy3g-1a9t-zbha-j84yvxxu2agd.note' 
->>>>>>> 8f3c049d0af9177d514240c260c881c88b2ab875
+2012-12-14 18:35:32.282285 : save.py : '0.68344200.edited_file.txt' file start to save to 'b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:36:48.410990 : save.py : '0.68344200.edited_file.txt' file start to save to 'b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:38:51.212902 : save.py : '0.68344200.edited_file.txt' file start to save to 'b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:39:43.353312 : save.py : '0.68344200.edited_file.txt' file start to save to 'b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:40:05.875563 : save.py : '0.68344200.edited_file.txt' file start to save to '/0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:40:05.877718 : save.py : fail open the file 
+ 2012-12-14 18:43:16.508103 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '/0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:43:16.509627 : save.py : fail open the file 
+ 2012-12-14 18:44:20.667721 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '/0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:44:20.669216 : save.py : fail open the file 
+ 2012-12-14 18:45:19.943222 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '/0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:45:19.944675 : save.py : fail open the file 
+ 2012-12-14 18:45:34.014881 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '/0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:45:34.016350 : save.py : fail open the file 
+ 2012-12-14 18:46:01.985913 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '/0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:46:46.885942 : save.py : '0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' file start to save to '0.68344200.edited_file.txt.xml' 
+ 2012-12-14 18:46:46.887023 : save.py : fail to make new directory 
+ 2012-12-14 18:47:14.077312 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '/0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:47:19.681911 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:47:19.684130 : save.py : it's first time. id: b47fcd52-dc66-46de-b2a5-7be0c86121aa 
+ 2012-12-14 18:47:19.684951 : save.py : fail writeToServer:8 
+ 2012-12-14 18:50:11.104368 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:50:11.107650 : save.py : fail writeToServer:9 
+ 2012-12-14 18:50:40.578834 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:52:33.774479 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 18:52:33.776391 : save.py : save EditedFile 
+ 2012-12-14 18:52:39.639930 : ./htmlparser.py : start to parse 0.56353900.edited_file.txt 
+ 2012-12-14 18:52:39.802934 : ./save.py : '0.56353900.edited_file.txt.xml' file start to save to '0/12/337db0cc-6be4-4bfe-8c04-1f6d9f058505.note' 
+ 2012-12-14 18:52:39.804754 : ./save.py : save EditedFile 
+ 2012-12-14 19:12:44.102460 : save.py : '0.68344200.edited_file.txt.xml' file start to save to '0/7/b47fcd52-dc66-46de-b2a5-7be0c86121aa.note' 
+ 2012-12-14 19:12:44.104377 : save.py : save EditedFile 
  

@@ -55,12 +55,16 @@ WORK_DIR = './notefile'
 notefile=sys.argv[1]
 last_ver = readLastVer()
 
-try:
-	server_ver = readFromServer()
+# try:
+# 	server_ver = readFromServer()
 
-except:
-	# 'first time!!'
-	server_ver = last_ver + 1
+# except:
+# 	# 'first time!!'
+# 	server_ver = last_ver + 1
+
+# if server_ver > last_ver:
+# 	# the 'notfile' chogeewha~
+# 	server_ver = last_ver + 1
 
 server_ver = last_ver + 1
 notefile_edited = editNotefile(notefile, server_ver)

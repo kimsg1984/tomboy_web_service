@@ -42,10 +42,10 @@ def writeToManifest(folder2, list_content):
 	listFile.write(list_content)
 	listFile.close()
 
-def writeToServer(server_ver):
-	notefile_sync_file = open('./notefile_sync.txt', 'w')
-	notefile_sync_file.write('%d' %server_ver)
-	notefile_sync_file.close()
+# def writeToServer(server_ver):
+# 	notefile_sync_file = open('./notefile_sync.txt', 'w')
+# 	notefile_sync_file.write('%d' %server_ver)
+# 	notefile_sync_file.close()
 
 
 def saveEditedFile(content):
@@ -53,7 +53,7 @@ def saveEditedFile(content):
 	edited_file_name.write(content)
 	edited_file_name.close()
 	if os.path.isfile(os.path.join(WORK_DIR, sys.argv[2])) and os.path.getsize(os.path.join(WORK_DIR, sys.argv[2])) > 0:
-		print 'succeed'
+		writeLog('save EditedFile')
 	else:
 		print 'Error'	
 		writeLog('fail saveEditedFile')
@@ -73,7 +73,12 @@ last_server_ver = re.findall(r'<sync revision="(.+)" server-id', list_content)
 last_server_ver = int(last_server_ver[0])
 server_ver = last_server_ver + 1
 
-folder2 = mkSyncFolder(server_ver, notefile_edited_split)
+try:
+	folder2 = mkSyncFolder(server_ver, notefile_edited_split)
+except:
+	writeLog('fail to make new directory')
+	print 'fail to make new directory'
+
 
 try:
 	WORK_DIR='./notefile'
@@ -91,19 +96,20 @@ try:
 			writeLog('it\'s first time. id: %s' %notefile_id[0])
 			list_content = list_content.replace('</sync>', '  <note id="%s" rev="%d" />\n</sync>' %(notefile_id[0], server_ver))
 		try:
-			writeToManifest(folder2, list_content)
-			try:
-				writeToServer(server_ver)
-			except:
-				writeLog('fail writeToServer:%s' %server_ver)
-				print 'fail writeToServer:%s' %server_ver
+			# writeToManifest(folder2, list_content)
+			print 'succeed'
+			# try:
+			# 	writeToServer(server_ver)
+			# except:
+			# 	writeLog('fail writeToServer:%s' %server_ver)
+			# 	print 'fail writeToServer:%s' %server_ver
 		except:
 			print 'fil to writeToManifest'
 			writeLog('fail writeToManifest')
 	except:
 		writeLog('fail  write server id :%s' %server_ver)
 		print 'fail  write server id :%s' %server_ver
-	
+
 	
 except:
 	writeLog('fail open the file')
