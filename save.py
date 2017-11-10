@@ -114,7 +114,3 @@ except:
 # except:
 # 	writeLog('fail open the file')
 # 	print 'fail open the file'
-
-
-
-
