@@ -1,5 +1,5 @@
+<?php
 
-<? 
 function getfile($title) {
 	$notefile = shell_exec("python ./dylink.py \"$title\"");
 	$notefile = str_replace("\n", "", $notefile);
@@ -8,7 +8,7 @@ function getfile($title) {
 
 $title = $_GET['title'];
 $title = strtolower($title);
-$notefile=getfile($title);
+$notefile = getfile($title);
 
 if(is_file("./notefile/$notefile")==false){
 	shell_exec('python ./mklist.py > ./notefile/list.txt');
@@ -16,11 +16,10 @@ if(is_file("./notefile/$notefile")==false){
 	$notefile=getfile($title);
 	
 	if(is_file("./notefile/$notefile")==false){
-		echo "title     : $title<br>";
-		echo "notefile : $notefile<br>";
-
-		echo "there is no file $title<br>";
-		echo "<A href=\"./notefile/list.txt\">LIST</A><br>";
+		echo "title: " . $title . "<br>";
+		echo "notefile: " . $notefile . "<br>";
+		echo "there is no file: " . $title . "<br>";
+		echo "<A href=notefile/list.txt>LIST</A><br>";
 
 	}	
 }
@@ -38,9 +37,9 @@ $check_empty = strlen("$notefile");
 	}  
 ?>
    
-<? include('head.html')   // 해더 불러오기(타이틀을 넣기위해 닫지는 않는다) ?>
+<? include('head.html')   // Load headers (do not close to insert titles) ?>
 
-<title><?echo $title?></title></head><body><div class="note" id="<? 
+<title><?php echo $title ?></title></head><body><div class="note" id="<? 
 echo $title ?>"><a name="<? echo $title ?>"></a><h1><? 
 echo $title ?></h1><form action="edit.php" method="POST"><input type="hidden" name="title" value="<?
 echo $title?>"><input type="hidden" name="notefile" value="<?
@@ -48,6 +47,6 @@ echo $notefile?>"><input type="hidden" name="content" value="<?
 echo $content?>"><input type="submit" value="EDIT"><input type="button" name="버튼" value="ADD" onclick="location.href='./edit.php'";></form><form action="edit.php" method="POST"> </form><?echo $content_html?></div>
 
 <HR NOSHADE>
-<form action="dylink.php" method="GET"><input type="text" name="title"><input type="submit" value="이동"></form>
+<form action="dylink.php" method="GET"><input type="text" name="title"><input type="submit" value="move"></form>
 <!-- <A href="<?echo "notefile/$notefile" ?>">XMLfile</A> | <A href="list.txt">LIST</A> -->
 </body></html>
