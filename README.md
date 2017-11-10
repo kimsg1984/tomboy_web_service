@@ -7,6 +7,7 @@ This Service provides an interface to read and edit Tomboy formated 'synced' fil
 - Link under the title 'notefile' in the 'Tomboy Web Service' folder 
 - Set permissions for the notes: `sudo chmod - R 777 *`
 ### Notes
+- Originally developed to work with Tomboy 1.10.1 / Standards 3.9.3
 - There is some Korean translation that is stil required. 
 - The goal of this fork is to provide editing capabilities to [Gnoted](https://github.com/joshp23/Gnoted).
 
