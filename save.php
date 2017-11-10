@@ -1,12 +1,32 @@
 <html>
 <head>
-<? include('head.html');  
+<?php 
+include('head.html');  
 
-$title = $_POST['title'];
-$title_tag = "<title>$title</title>";
-$content = $_POST['content']; $meta_data = $_POST['meta_data'];
-$content_tag = "$content <!--{meta_data} $meta_data";
-$notefile = $_POST['notefile'];
+if(isset($_POST['title'])) {
+	$title = $_POST['title'];
+	$title_tag = "<title>$title</title>";
+} else { 
+	$title = null;
+	$title_tag = null;
+}
+if(isset($_POST['content'])) {
+	$content = $_POST['content'];
+} else {
+	$content = null;
+}
+if(isset($_POST['meta_data'])) { 
+	$meta_data = $_POST['meta_data'];
+	$content_tag = "$content <!--{meta_data} $meta_data";
+} else {
+	$meta_data = null;
+	$content_tag = null;
+}
+if(isset($_POST['notefile'])) { 
+	$notefile = $_POST['notefile'];
+} else {
+	$notefile = null;
+}
 $time = explode(" ", microtime());
 $edited_file_name = "$time[0].edited_file.txt";
 
@@ -31,9 +51,9 @@ if ($save == "succeed\n"){
 
 
 else {
-	echo "title     : $title<br>";
-	echo "content  : $content<br>";
-	echo "notefile : $notefile<br>";
+	echo "title: " . $title . "<br>";
+	echo "content: " . $content . "<br>";
+	echo "notefile: " . $notefile . "<br>";
 	echo "python ./htmlparser.py $edited_file_name -> $result1<br>";
 	echo "python ./notefile_sync.py $notefile -> $notefile_sync<br><br>";
 	echo "python ./save.py \"$edited_file_name.xml\" $notefile_sync -> $save<br>";

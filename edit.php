@@ -1,6 +1,8 @@
 <html>
 <head>
-<? include('head.html'); 
+<?php
+
+	include('head.html'); 
 	function RandStr($len){
 		$return_str = "";
 		for ( $i = 0; $i < $len; $i++ ) { 
@@ -19,7 +21,11 @@
 		return $notefile;
 	}
 
-	$notefile=$_POST['notefile'];
+	if(isset($_POST['notefile'])) { 
+		$notefile=$_POST['notefile'];
+	} else {
+		$notefile=null;
+	}
 	$check_empty = strlen("$notefile");
    	   	
 	if ( $check_empty != 0 ) { 
@@ -38,19 +44,19 @@
 
 
 
- ?>  <!-- 한글출력과 아이폰사이즈에 맞추기 위한 해더 삽입 -->
-<script src="easyEditor.js"></script> <!-- 이지에디터 스크립트 파일 호출 -->
+ ?>  <!-- Insert header for matching Hangul output and iPhone size -->
+<script src="easyEditor.js"></script> <!-- Calling the image editor script file -->
 <script>
 	function chkForm(f)
 	{
-		var content = ed.getHtml(); //대체한 textarea에 작성한HTML값 전달
+		var content = ed.getHtml(); // Pass the HTML value you wrote to the alternate textarea
 		if(content=="")
 		{
 			alert("내용을 적어주세요!");
 			ed.focus();
 			return false;
 		}
-		// alert(content); //값확인(디버깅)
+		// alert(content); // Verifying values (debugging)
 		return true;
 	}
 
@@ -62,22 +68,22 @@
 <pre>
 </pre>
 	<form  action="save.php" method="POST" onsubmit="chkForm(this)">
-	<input type="text" name="title" Value="<?echo $title?>">
-	<input type="hidden" name="notefile" Value="<?echo $notefile?>">
-	<input type="hidden" name="meta_data" Value="<?echo $content[1]?>">
-	<textarea name="content" id="content"><?echo $content[0]?></textarea>
+	<input type="text" name="title" Value="<?php echo $title ?>">
+	<input type="hidden" name="notefile" Value="<?php echo $notefile ?>">
+	<input type="hidden" name="meta_data" Value="<?php echo $content[1] ?>">
+	<textarea name="content" id="content"><?php echo $content[0] ?></textarea>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="저장">
 	
 	<!--  -->
 
 	 <script>
 		
-	 	var ed = new easyEditor("content"); //초기화 id속성값
+	 	var ed = new easyEditor("content"); // Initialization id attribute value
 	 	//ed.cfg.width = "250px"; 
 	 	//ed.cfg.height = "300px"; 
 	 	ed.cfg.border = "1px dashed red";  
 	 	ed.cfg.Btn = ["undo","bold","underline","strike","ul2"];
-		ed.init(); //웹에디터 삽입
+		ed.init(); // Insert web editor
 	 </script>
 	
 	<!--  -->

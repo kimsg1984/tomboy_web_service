@@ -47,17 +47,3 @@ except:
 
 
 listFile.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
-  

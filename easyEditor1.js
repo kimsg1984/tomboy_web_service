@@ -1,46 +1,46 @@
-//	easy WebEditor (DHTML wysiwyg 웹에디터)
+//	easy WebEditor (DHTML wysiwyg Web editor)
 //	Beta 20061228
 //	http://cafe.daum.net/easyeditor
-//변수설정
+// Variable setting
 var easyConfig = {
 	//----------------------------------------------------
 	//style
-	border:"1px solid #cdcdcd",	//기본 border
-	bgcolor : "#fff",			//기본 bgcolor
-	font : "normal 10pt 굴림",	//기본 폰트 style(font-style, font-variant, font-weight)
-	color : "#000",				//기본 폰트 컬러
-	margin : "5px",				//내부 margin
-	width : "100%",				//기본 width
-	height : "200px",			//기본 height
+	border:"1px solid #cdcdcd",	//basic border
+	bgcolor : "#fff",			//basic bgcolor
+	font : "normal 10pt 굴림",	//basic font style(font-style, font-variant, font-weight)
+	color : "#000",				//basic font color
+	margin : "5px",				//inside margin
+	width : "100%",				//basic width
+	height : "200px",			//basic height
 	//----------------------------------------------------
 	filepath : ".",	
-	imgpath : "./img/easy",		//버튼 이미지경로
-	over_bordercolor : "#fff",	//버튼 오버시 보더컬러
-	over_bgcolor : "#ff6600",	//버튼 오버시 bgcolor
-	divbtn_bgcolor : "#fff",	//버튼 영역 div bgcolor
+	imgpath : "./img/easy",		//button Image path
+	over_bordercolor : "#fff",	//button Overshadow Border Color
+	over_bgcolor : "#ff6600",	//button Over-over bgcolor
+	divbtn_bgcolor : "#fff",	//button Area div bgcolor
 	//----------------------------------------------------
-	//기본버튼 
-	Btn : null,
+	//basicbutton 
+	Btn 	: null,
 	BtnList : {
-		font	: ["글자체","font.gif"], size : ["글자크기","size.gif"],
-		undo	: ["되돌리기","undo.gif"], redo : ["재실행","redo.gif"],
-		bold	: ["굵게","bold.gif"], italic : ["기울리기","italic.gif"],
-		strike	: ["취소선","strike.gif"], left : ["왼쪽 맞춤","left.gif"],
-		center	: ["가운데 맞춤","center.gif"], right : ["오른쪽 맞춤","right.gif"],
-		justify : ["혼합정렬","justify.gif"], clean : ["스타일 지움","clean.gif"],
-		del		: ["선택삭제","del.gif"], color : ["글자색","color.gif"],
-		hilite	: ["글자 배경색","hilite.gif"], link	: ["링크 삽입","link.gif"],
-		unlink	: ["링크 해제","unlink.gif"], ul1 : ["번호달기","ul1.gif"],
-		ul2		: ["기호달기","ul2.gif"], outdent : ["내어쓰기","outdent.gif"],
-		indent	: ["들여쓰기","indent.gif"], hr : ["수평선 삽입","hr.gif"],
-		all		: ["전체선택","selectall.gif"], save : ["문서 저장","save.gif"],
-		sup	: ["윗첨자","sup.gif"], sub : ["아래첨자","sub.gif"],
-		underline : ["밑줄","underline.gif"], about : ["이지 웹에디터","about.gif"],
-		//cut	: ["잘라내기","cut.gif"],copy: ["복사","copy.gif"],paste: ["붙여넣기","paste.gif"],
-		source  : ["소스보기","source.gif"], bar : ["구분선","bar.gif"]
+	font	: ["font", "font.gif"], size: ["font size", "size.gif"],
+	undo	: ["undo", "undo.gif"], redo: ["redo", "redo.gif"],
+	bold	: ["bold", "bold.gif"], italic: ["ringing", "italic.gif"],
+	strike	: ["strikethrough", "strike.gif"], left: ["left alignment", "left.gif"],
+	center	: ["center alignment", "center.gif"], right: ["right alignment", "right.gif"],
+	Justify	: ["Mixed Sort", "justify.gif"], clean: ["Stylize", "clean.gif"],
+	del		: ["delete", "del.gif"], color: ["color", "color.gif"],
+	hilite	: ["background color", "hilite.gif"], link: ["insert link", "link.gif"],
+	unlink	: ["unlink", "unlink.gif"], ul1: ["numbering", "ul1.gif"],
+	ul2		: ["symbol", "ul2.gif"], outdent: ["outdent.gif"],
+	indent	: ["indent", "indent.gif"], hr: ["insert horizon", "hr.gif"],
+	all		: ["select all", "selectall.gif"], save: ["save document", "save.gif"],
+	sup		: ["superscript", "sup.gif"], sub: ["subscript", "sub.gif"],
+	underline: ["underline", "underline.gif"], about: ["EJ Web Editor", "about.gif"],
+	// cut: ["cut", "cut.gif"], copy: ["copy", "copy.gif"], paste: ["paste", "paste.gif"
+	source: ["view source", "source.gif"], bar: ["divider", "bar.gif"]
 	},	
 	//----------------------------------------------------
-	//기본버튼템플릿 (all,simple)
+	//basicbutton template (all,simple)
 	BtnTemplate  : {
 		all : ["save","preview","bar","all","undo","redo","bar",
 				"font","size","bar","color","hilite","bar","bold","italic",
@@ -59,10 +59,10 @@ function easyEditor(id)
 {
 	if(typeof(document.execCommand)=="undefined") return;
 	easyUtil.init();
-	//config설정
+	//config setting
 	this.cfg = easyConfig;
 	this.cfg.preid = easyConfig.name+"_"+id;
-	this.cfg.Btn = easyConfig.BtnTemplate["all"]; //기본 버튼 템플릿
+	this.cfg.Btn = easyConfig.BtnTemplate["all"]; //basic button template
 	this.mode = "wysiwyg";
 	this.btn = "";
 	this.sel	  = null;
@@ -70,8 +70,8 @@ function easyEditor(id)
 	this.sel_html = "";
 	this._doc		= null;
 	this._textarea	= document.getElementById(id);
-	this._div		= document.createElement("div");		//전체 div
-	this._divbtn	= document.createElement("div");		//버튼영역 div
+	this._div		= document.createElement("div");		//all div
+	this._divbtn	= document.createElement("div");		//button area div
 	this._iframe	= document.createElement("iframe");		//iframe
 	this._text		= document.createElement("textarea");	//textarea(source)
 	this._div.id	= this.cfg.preid+"_div";
@@ -90,7 +90,7 @@ easyEditor.prototype.init = function()
 	this._text.style.height= this.cfg.height;
 	this._text.style.border= "none";
 	this._text.style.display="none";
-	this._text.style.font = "9pt 굴림";
+	this._text.style.font = "9pt The";
 	this._text.style.background = "#efefef url("+this.cfg.imgpath+"/source_bg.gif) 0 -2px";
 	this._text.style.lineHeight = "165%";
 	//iframe
@@ -99,25 +99,25 @@ easyEditor.prototype.init = function()
 	//this._iframe.scrolling	 = "yes";
 	this._iframe.frameBorder = "no";
 	//this._iframe.onmouseover = easyUtil.hideDiv;
-	//전체 div	
+	//all div	
 	this._div.style.border	= this.cfg.border;
 	this._div.style.width	= this.cfg.width;
-	//버튼 div		
+	//button div		
 	this._divbtn.style.padding	="2px";
 	this._divbtn.style.backgroundColor = this.cfg.divbtn_bgcolor;
 	this._divbtn.style.borderBottom = this.cfg.border;
 	if(easyUtil.isIE) {this._divbtn.style.width = this.cfg.width;}	
-	//삽입
+	//insertion
 	this._textarea.parentNode.insertBefore(this._div, this._textarea);
 	this._div.appendChild(this._divbtn);
 	this._div.appendChild(this._iframe);
 	this._div.appendChild(this._text);	
-	//버튼요소 삽입
+	//button Element insertion
 	this.setBtn();
 	//iframe doc
 	this._doc = this._iframe.contentWindow.document;
 	this._doc.designMode="on";
-	//기본 css설정 
+	//basic css Set 
 	var css  = "body{margin:"+this.cfg.margin+";background-color:"+this.cfg.bgcolor+";}";
 	css		+= " body,table,td{font:"+this.cfg.font+";color:"+this.cfg.color+";}";
 	this._iframe.css = css;
@@ -159,7 +159,7 @@ easyEditor.prototype.setBtn = function()
 
 		if(order!="br" && !btn)
 		{	
-			if(order!="") alert("없는 버튼명령입니다 ("+order+")");
+			if(order!="") alert(" Do not have button It is a command ("+order+")");
 			continue;
 		}
 		if(order=="bar")
@@ -203,7 +203,7 @@ easyEditor.prototype.cmd = function(btn, order, value)
 {
 	var self = (this) ? this:easyUtil._editor;
 	var doc = self._doc;
-	if(self.mode=="text" && order!="source") {alert("'소스보기' 해제후 사용해 주세요!");	return;}
+	if(self.mode=="text" && order!="source") {alert("'Show source' and use it!");	return;}
 	self.focus();
 	easyUtil.hideDiv();	self.btn = btn;
 
@@ -212,7 +212,7 @@ easyEditor.prototype.cmd = function(btn, order, value)
 
 	switch(order)
 	{		
-		case "create_order":	//사용자 추가명령
+		case "create_order":	// Add User command
 			self.setSelection();
 			easyUtil._editor = self;
 			easyUtil.order = order;
@@ -401,23 +401,23 @@ var easyUtil = {
 	tblSet_about : function()
 	{	
 		if(easyUtil._abouttbl) return;
-		var s="<span style='color:#ff6600'>이지 웹에디터</span><br/>버전 "+easyConfig.version+" <br/>";
-		s +="도움 <a href='http://cafe.daum.net/easyeditor'>http://cafe.daum.net/easyeditor</a>";
+		var s="<span style='color:#ff6600'>Easy Web Editor </ span> <br/> Version "+easyConfig.version+" <br/>";
+		s +="help <a href='http://cafe.daum.net/easyeditor'>http://cafe.daum.net/easyeditor</a>";
 		var d = easyUtil.getDiv(easyConfig.name+"_abouttbl",s);
-		d.style.font = "9pt 돋움";	d.style.lineHeight ="150%";	
+		d.style.font = "9pt The";	d.style.lineHeight ="150%";	
 		document.body.appendChild(d); easyUtil._abouttbl = d;
 	},
 	tblSet_link : function()
 	{	
 		if(easyUtil._linktbl) return;
 		var id = easyConfig.name+"_linktxt";
-		var s = "<input type='text' value='http://' style='width:230px;font:8pt 돋움;color:gray' id='"+id+"' /><br>";
-		s += "링크주소(URL)를 넣어주세요<br><br>";
-		s += "<a href='javascript:;' onclick=\"easyUtil._editor.cmd(null, easyUtil.order, '');\">확인</a>";
+		var s = "<input type='text' value='http://' style='width:230px;font:8pt The;color:gray' id='"+id+"' /><br>";
+		s += "Please provide link address (URL)<br><br>";
+		s += "<a href='javascript:;' onclick=\"easyUtil._editor.cmd(null, easyUtil.order, '');\">Confirm</a>";
 		
 		var div = easyUtil.getDiv(easyConfig.name+"_linktbl",s);
 		div.style.padding = "15px";
-		div.style.font = "8pt 돋움";
+		div.style.font = "8pt The";
 		document.body.appendChild(div);
 		easyUtil._linktbl = div;
 		easyUtil._linktxt = document.getElementById(id);
@@ -430,12 +430,9 @@ var easyUtil = {
 
 		for(var i=0; i<size.length; i++)
 		{
-			s += "<a href='javascript:;' onclick=\"easyUtil._editor.cmd(null, easyUtil.order,'"+(i+1)+"');\" style='font:"+size[i]+"pt 굴림;'>가나다라 ("+size[i]+")</a><br />";
+			s += "<a href='javascript:;' onclick=\"easyUtil._editor.cmd(null, easyUtil.order,'"+(i+1)+"');\" style='font:"+size[i]+"pt The;'>Ghana ("+size[i]+")</a><br />";
 		}
-		var div = easyUtil.getDiv(e
-
-
-			asyConfig.name+"_sizetbl",s);
+		var div = easyUtil.getDiv(easyConfig.name+"_sizetbl",s);
 		div.style.padding = "5px";
 		document.body.appendChild(div);
 		easyUtil._sizetbl = div;
@@ -443,12 +440,12 @@ var easyUtil = {
 	tblSet_font : function()
 	{
 		if(easyUtil._fonttbl) return;
-		var font = new Array("굴림","돋움","궁서","arial","verdana");
+		var font = new Array("The","The","The","arial","verdana");
 		var s=""; var pattern=/^[가-힣]+$/;
 
 		for(var i=0; i<font.length; i++)
 		{
-			txt = (pattern.test(font[i])) ? "가나다라마바사":"abcdefghijkl";
+			txt = (pattern.test(font[i])) ? "Ganadaramabasa":"abcdefghijkl";
 			s += "<a href='javascript:;' onclick=\"easyUtil._editor.cmd(null, easyUtil.order,'"+font[i]+"');\" style='font:10pt "+font[i]+";line-height:170%'>"+txt+" ("+font[i]+")</a><br />";
 		}
 		var div = easyUtil.getDiv(easyConfig.name+"_fonttbl",s);
@@ -505,13 +502,13 @@ var easyUtil = {
 	trim : function(s) {return s.replace(/^\s+|\s+$/g,'');} 
 };
 //--------------------------------------------------------
-//명령(버튼) 추가
-easyConfig.BtnList.table = ["테이블 삽입","table.gif", 
+//Command (button) Add
+easyConfig.BtnList.table = ["table insertion","table.gif", 
 function (self){ 
 	window.open(easyConfig.filepath+"/table.html","table","width=400,height=220,status=1");
 } ];
 
-easyConfig.BtnList.preview = ["미리보기","preview.gif",
+easyConfig.BtnList.preview = ["Preview","preview.gif",
 function (self){
 	var w=window.open("","preview","width=800,height=600,status=1,scrollbars=1,resizable=1");
 	w.document.open();
@@ -519,24 +516,24 @@ function (self){
 	w.document.close();
 }];
 
-easyConfig.BtnList.image = ["이미지 삽입","image.gif",
+easyConfig.BtnList.image = ["image insertion","image.gif",
 function (self){
 	var order = "image";
 	var txt_id = easyConfig.name+"_imagetxt";
 	var div_id = easyConfig.name+"_imagetbl";
 	var div = null;
 	
-	if(self.btn) //image 레이어 보여주기
+	if(self.btn) //image Show layer
 	{	
 		if(!document.getElementById(div_id))
 		{	
 			var s="";
-			s +="<input type='text' value='http://' style='width:230px;font:8pt 돋움;color:gray' id='"+txt_id+"' /><br />";
-			s += "이미지주소(URL)를 넣어주세요<br /><br />";
-			s += "<a href='javascript:;' onclick=\"easyUtil._editor.cmd(null, '"+order+"', '');\">확인</a>";
+			s +="<input type='text' value='http://' style='width:230px;font:8pt The;color:gray' id='"+txt_id+"' /><br />";
+			s += "Please put image URL (URL)<br /><br />";
+			s += "<a href='javascript:;' onclick=\"easyUtil._editor.cmd(null, '"+order+"', '');\">Confirm</a>";
 			div = easyUtil.getDiv(div_id,s);
 			div.style.padding = "15px";
-			div.style.font = "8pt 돋움";
+			div.style.font = "8pt The";
 			document.body.appendChild(div);
 			easyUtil._imagetbl = div;
 			easyUtil.arrtbl.push(order);
@@ -548,7 +545,7 @@ function (self){
 		}
 		easyUtil.showDiv(div);
 	}
-	else //명령실행(이미지삽입)
+	else //Command execution (image insertion)
 	{
 		var html = "<img src='"+document.getElementById(txt_id).value+"' border='0' />";
 		self.innerHTML(html);
