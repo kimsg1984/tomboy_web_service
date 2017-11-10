@@ -1,4 +1,4 @@
 <? include('head.html'); ?>
 
 
-<input type="button" name="버튼" value="Check 'Manifest.xml'" onclick="<?shell_exec("python ./checkmanifest.py")?>'";>
+<input type="button" name="button" value="Check 'Manifest.xml'" onclick="<?php shell_exec("python ./checkmanifest.py") ?>'";>
