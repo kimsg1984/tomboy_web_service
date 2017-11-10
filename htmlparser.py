@@ -93,7 +93,7 @@ def addTag(content_xml):
 	except:
 		null = 0 # content has no same word as 'title'
 		
-	# t = '웹톰'
+	# t = 'WebTom'
 
 	for t in titles:
 		try:
