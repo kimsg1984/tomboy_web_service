@@ -1,5 +1,5 @@
 
-http://ubuntu.or.kr/viewtopic.php?f=4&t=23407
+https://forum.ubuntu-kr.org/viewtopic.php?f=4&t=23407
 
 톰보이 웹서비스(Tomboy Web Service)
  
