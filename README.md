@@ -22,7 +22,3 @@
 - 보이지 않은(?) 수많은 버그들이 존재합니다.
 - 톰보이에서는 메모 동기화시에 manifest에 기재된 파일중 '하나'라도 없을 시에 동기화 실패로 넘어가는데, 아직 이에 대한 대비기능이 없습니다.
 - 쪽지를 불러오는 방식이 GET 방식인데, 이를 아스키로 변경해주질 않아서 아직 타이틀 내에 '특수문자' 삽입을 할수 없습니다.
-
-- This SERVICE is helping people to read and edit 'tomboy synced file' on web.
-- 'php', 'python', 'JavaScript' are used in this SERVICE.
-- Specially, thanks to 'uix' who shared 'EAZY WEB EDITOR'. It made the SERVICE peossible to edit the text on web.(http://uix.kr/service)
