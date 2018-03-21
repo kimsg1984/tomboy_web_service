@@ -1,4 +1,4 @@
-﻿#!/usr/bin/python
+#!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
 # Author: SunGyo Kim
@@ -93,15 +93,12 @@ def addTag(content_xml):
 	except:
 		null = 0 # content has no same word as 'title'
 		
-	# t = '웹톰'
-
+	# t == '웹톰'
 	for t in titles:
 		try:
 			content_xml = content_xml.replace( ' %s ' %t, ' <link:internal>%s</link:internal> ' %t)
-			
 		except:
 			null = 0
-
 		
 	return content_xml
 

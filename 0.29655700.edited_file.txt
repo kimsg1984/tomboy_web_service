@@ -1,0 +1,1 @@
+<title>start</title> <a href="dylink.php?title=test" target="_blank">test</a> <div><br></div><div>help me for a moment.</div><div><br></div><div> test2 </div>   <!--{meta_data}    {/meta_data}-->

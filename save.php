@@ -18,17 +18,13 @@ fclose($edited_file);
 $result1=shell_exec("python ./htmlparser.py $edited_file_name");
 $notefile_sync=shell_exec("python ./notefile_sync.py $notefile");
 $save=shell_exec("python ./save.py \"$edited_file_name.xml\" $notefile_sync");
-
 if ($save == "succeed\n"){
 	shell_exec('python ./mklist.py > ./notefile/list.txt');
-	unlink("$edited_file_name");
-	unlink("$edited_file_name.xml");
+	// unlink("$edited_file_name");
+	// unlink("$edited_file_name.xml");
 	rename("./notefile/$notefile", "./notefile/backup/$title$edited_file_name");
 	header("Location:./dylink.php?title=$title");
-
-
 }
-
 
 else {
 	echo "title     : $title<br>";
@@ -39,11 +35,7 @@ else {
 	echo "python ./save.py \"$edited_file_name.xml\" $notefile_sync -> $save<br>";
 	echo '.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>error';
 }
-
-
 ?>
-
-
   </div>
 
 
