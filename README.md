@@ -28,5 +28,8 @@
 설치시 필요사항
 - short tag 설정(<? ?>)
  -  php.ini 에서 short_open_tag=Off 를 On 으로 설정
+- HTML 파일 실행
+ - <FilesMatch "\.ph(p3?|tml)$">
+- ubuntu 12.04
  
 - 
